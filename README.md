@@ -24,4 +24,4 @@ Cargas de trabajo: <br>
 Opcional: <br>
 - Herramiestas de desarrollo de .NET Framework 4.8
 - Herramiestas de Entity Framework 6
-- Compatibilidad con el lenguaje de escritorio
+- Paquete de compatibilidad de bibliotecas
