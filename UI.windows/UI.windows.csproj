@@ -81,5 +81,19 @@
     <Folder Include="Formularios\" />
     <Folder Include="VistaModelo\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Aplicacion\Aplicacion.csproj">
+      <Project>{58b3a82a-3005-4cba-b95f-3d8fab2d0641}</Project>
+      <Name>Aplicacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominio.Modelo\Dominio.Modelo.csproj">
+      <Project>{12d4c16f-7fa5-4990-adb2-75dd475add60}</Project>
+      <Name>Dominio.Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominio.Servicio\Dominio.Servicio.csproj">
+      <Project>{45434a1c-6680-49a4-9a62-48ad54a559fc}</Project>
+      <Name>Dominio.Servicio</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

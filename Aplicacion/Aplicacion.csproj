@@ -47,5 +47,19 @@
   <ItemGroup>
     <Folder Include="Servicios\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio.Modelo\Dominio.Modelo.csproj">
+      <Project>{12d4c16f-7fa5-4990-adb2-75dd475add60}</Project>
+      <Name>Dominio.Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominio.Servicio\Dominio.Servicio.csproj">
+      <Project>{45434a1c-6680-49a4-9a62-48ad54a559fc}</Project>
+      <Name>Dominio.Servicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructura.AccesoDatos\Infraestructura.AccesoDatos.csproj">
+      <Project>{2010054f-fe96-47f7-a1e2-4707ed2c5fc2}</Project>
+      <Name>Infraestructura.AccesoDatos</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
