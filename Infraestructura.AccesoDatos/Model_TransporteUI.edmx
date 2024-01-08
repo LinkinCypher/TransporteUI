@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="transporteUI_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="detalles_reserva">
+          <Key>
+            <PropertyRef Name="id_detalle_reserva" />
+          </Key>
+          <Property Name="id_detalle_reserva" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="barrio" Type="varchar" MaxLength="100" />
+          <Property Name="calles" Type="varchar" MaxLength="100" />
+          <Property Name="casa" Type="varchar" MaxLength="100" />
+          <Property Name="referencia" Type="varchar" MaxLength="100" />
+          <Property Name="telefono" Type="varchar" MaxLength="100" />
+          <Property Name="id_reserva" Type="int" />
+          <Property Name="id_estudiante" Type="int" />
+        </EntityType>
+        <EntityType Name="estudiantes">
+          <Key>
+            <PropertyRef Name="id_estudiante" />
+          </Key>
+          <Property Name="id_estudiante" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="100" />
+          <Property Name="apellido" Type="varchar" MaxLength="100" />
+          <Property Name="cedula" Type="int" />
+          <Property Name="edad" Type="varchar" MaxLength="50" />
+          <Property Name="especialidad" Type="varchar" MaxLength="100" />
+          <Property Name="semestre" Type="varchar" MaxLength="50" />
+          <Property Name="fecha_Registro" Type="datetime" />
+        </EntityType>
+        <EntityType Name="reservas">
+          <Key>
+            <PropertyRef Name="id_reserva" />
+          </Key>
+          <Property Name="id_reserva" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="sur" Type="varchar" MaxLength="10" />
+          <Property Name="centro" Type="varchar" MaxLength="10" />
+          <Property Name="norte" Type="varchar" MaxLength="10" />
+          <Property Name="id_estudiante" Type="int" />
+        </EntityType>
+        <Association Name="FK__detalles___id_es__5070F446">
+          <End Role="estudiantes" Type="Self.estudiantes" Multiplicity="0..1" />
+          <End Role="detalles_reserva" Type="Self.detalles_reserva" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="estudiantes">
+              <PropertyRef Name="id_estudiante" />
+            </Principal>
+            <Dependent Role="detalles_reserva">
+              <PropertyRef Name="id_estudiante" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__detalles___id_re__4F7CD00D">
+          <End Role="reservas" Type="Self.reservas" Multiplicity="0..1" />
+          <End Role="detalles_reserva" Type="Self.detalles_reserva" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="reservas">
+              <PropertyRef Name="id_reserva" />
+            </Principal>
+            <Dependent Role="detalles_reserva">
+              <PropertyRef Name="id_reserva" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__reservas__id_est__4CA06362">
+          <End Role="estudiantes" Type="Self.estudiantes" Multiplicity="0..1" />
+          <End Role="reservas" Type="Self.reservas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="estudiantes">
+              <PropertyRef Name="id_estudiante" />
+            </Principal>
+            <Dependent Role="reservas">
+              <PropertyRef Name="id_estudiante" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="transporteUI_DBModelStoreContainer">
+          <EntitySet Name="detalles_reserva" EntityType="Self.detalles_reserva" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="estudiantes" EntityType="Self.estudiantes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="reservas" EntityType="Self.reservas" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__detalles___id_es__5070F446" Association="Self.FK__detalles___id_es__5070F446">
+            <End Role="estudiantes" EntitySet="estudiantes" />
+            <End Role="detalles_reserva" EntitySet="detalles_reserva" />
+          </AssociationSet>
+          <AssociationSet Name="FK__detalles___id_re__4F7CD00D" Association="Self.FK__detalles___id_re__4F7CD00D">
+            <End Role="reservas" EntitySet="reservas" />
+            <End Role="detalles_reserva" EntitySet="detalles_reserva" />
+          </AssociationSet>
+          <AssociationSet Name="FK__reservas__id_est__4CA06362" Association="Self.FK__reservas__id_est__4CA06362">
+            <End Role="estudiantes" EntitySet="estudiantes" />
+            <End Role="reservas" EntitySet="reservas" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="transporteUI_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="detalles_reserva">
+          <Key>
+            <PropertyRef Name="id_detalle_reserva" />
+          </Key>
+          <Property Name="id_detalle_reserva" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="barrio" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="calles" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="casa" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="referencia" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="telefono" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="id_reserva" Type="Int32" />
+          <Property Name="id_estudiante" Type="Int32" />
+          <NavigationProperty Name="estudiantes" Relationship="Self.FK__detalles___id_es__5070F446" FromRole="detalles_reserva" ToRole="estudiantes" />
+          <NavigationProperty Name="reservas" Relationship="Self.FK__detalles___id_re__4F7CD00D" FromRole="detalles_reserva" ToRole="reservas" />
+        </EntityType>
+        <EntityType Name="estudiantes">
+          <Key>
+            <PropertyRef Name="id_estudiante" />
+          </Key>
+          <Property Name="id_estudiante" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="apellido" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="cedula" Type="Int32" />
+          <Property Name="edad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="especialidad" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="semestre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="fecha_Registro" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="detalles_reserva" Relationship="Self.FK__detalles___id_es__5070F446" FromRole="estudiantes" ToRole="detalles_reserva" />
+          <NavigationProperty Name="reservas" Relationship="Self.FK__reservas__id_est__4CA06362" FromRole="estudiantes" ToRole="reservas" />
+        </EntityType>
+        <EntityType Name="reservas">
+          <Key>
+            <PropertyRef Name="id_reserva" />
+          </Key>
+          <Property Name="id_reserva" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sur" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="centro" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="norte" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="id_estudiante" Type="Int32" />
+          <NavigationProperty Name="detalles_reserva" Relationship="Self.FK__detalles___id_re__4F7CD00D" FromRole="reservas" ToRole="detalles_reserva" />
+          <NavigationProperty Name="estudiantes" Relationship="Self.FK__reservas__id_est__4CA06362" FromRole="reservas" ToRole="estudiantes" />
+        </EntityType>
+        <Association Name="FK__detalles___id_es__5070F446">
+          <End Role="estudiantes" Type="Self.estudiantes" Multiplicity="0..1" />
+          <End Role="detalles_reserva" Type="Self.detalles_reserva" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="estudiantes">
+              <PropertyRef Name="id_estudiante" />
+            </Principal>
+            <Dependent Role="detalles_reserva">
+              <PropertyRef Name="id_estudiante" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__detalles___id_re__4F7CD00D">
+          <End Role="reservas" Type="Self.reservas" Multiplicity="0..1" />
+          <End Role="detalles_reserva" Type="Self.detalles_reserva" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="reservas">
+              <PropertyRef Name="id_reserva" />
+            </Principal>
+            <Dependent Role="detalles_reserva">
+              <PropertyRef Name="id_reserva" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__reservas__id_est__4CA06362">
+          <End Role="estudiantes" Type="Self.estudiantes" Multiplicity="0..1" />
+          <End Role="reservas" Type="Self.reservas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="estudiantes">
+              <PropertyRef Name="id_estudiante" />
+            </Principal>
+            <Dependent Role="reservas">
+              <PropertyRef Name="id_estudiante" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="transporteUI_DBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="detalles_reserva" EntityType="Self.detalles_reserva" />
+          <EntitySet Name="estudiantes" EntityType="Self.estudiantes" />
+          <EntitySet Name="reservas" EntityType="Self.reservas" />
+          <AssociationSet Name="FK__detalles___id_es__5070F446" Association="Self.FK__detalles___id_es__5070F446">
+            <End Role="estudiantes" EntitySet="estudiantes" />
+            <End Role="detalles_reserva" EntitySet="detalles_reserva" />
+          </AssociationSet>
+          <AssociationSet Name="FK__detalles___id_re__4F7CD00D" Association="Self.FK__detalles___id_re__4F7CD00D">
+            <End Role="reservas" EntitySet="reservas" />
+            <End Role="detalles_reserva" EntitySet="detalles_reserva" />
+          </AssociationSet>
+          <AssociationSet Name="FK__reservas__id_est__4CA06362" Association="Self.FK__reservas__id_est__4CA06362">
+            <End Role="estudiantes" EntitySet="estudiantes" />
+            <End Role="reservas" EntitySet="reservas" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="transporteUI_DBModelStoreContainer" CdmEntityContainer="transporteUI_DBEntities">
+          <EntitySetMapping Name="detalles_reserva">
+            <EntityTypeMapping TypeName="transporteUI_DBModel.detalles_reserva">
+              <MappingFragment StoreEntitySet="detalles_reserva">
+                <ScalarProperty Name="id_detalle_reserva" ColumnName="id_detalle_reserva" />
+                <ScalarProperty Name="barrio" ColumnName="barrio" />
+                <ScalarProperty Name="calles" ColumnName="calles" />
+                <ScalarProperty Name="casa" ColumnName="casa" />
+                <ScalarProperty Name="referencia" ColumnName="referencia" />
+                <ScalarProperty Name="telefono" ColumnName="telefono" />
+                <ScalarProperty Name="id_reserva" ColumnName="id_reserva" />
+                <ScalarProperty Name="id_estudiante" ColumnName="id_estudiante" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="estudiantes">
+            <EntityTypeMapping TypeName="transporteUI_DBModel.estudiantes">
+              <MappingFragment StoreEntitySet="estudiantes">
+                <ScalarProperty Name="id_estudiante" ColumnName="id_estudiante" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="apellido" ColumnName="apellido" />
+                <ScalarProperty Name="cedula" ColumnName="cedula" />
+                <ScalarProperty Name="edad" ColumnName="edad" />
+                <ScalarProperty Name="especialidad" ColumnName="especialidad" />
+                <ScalarProperty Name="semestre" ColumnName="semestre" />
+                <ScalarProperty Name="fecha_Registro" ColumnName="fecha_Registro" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="reservas">
+            <EntityTypeMapping TypeName="transporteUI_DBModel.reservas">
+              <MappingFragment StoreEntitySet="reservas">
+                <ScalarProperty Name="id_reserva" ColumnName="id_reserva" />
+                <ScalarProperty Name="sur" ColumnName="sur" />
+                <ScalarProperty Name="centro" ColumnName="centro" />
+                <ScalarProperty Name="norte" ColumnName="norte" />
+                <ScalarProperty Name="id_estudiante" ColumnName="id_estudiante" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

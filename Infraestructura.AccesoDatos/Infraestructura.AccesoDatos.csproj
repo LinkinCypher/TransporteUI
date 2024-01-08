@@ -31,8 +31,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,7 +51,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="detalles_reserva.cs">
+      <DependentUpon>Model_TransporteUI.tt</DependentUpon>
+    </Compile>
+    <Compile Include="estudiantes.cs">
+      <DependentUpon>Model_TransporteUI.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model_TransporteUI.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_TransporteUI.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model_TransporteUI.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_TransporteUI.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model_TransporteUI.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_TransporteUI.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reservas.cs">
+      <DependentUpon>Model_TransporteUI.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositorio\" />
@@ -56,6 +89,34 @@
       <Project>{45434a1c-6680-49a4-9a62-48ad54a559fc}</Project>
       <Name>Dominio.Servicio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Model_TransporteUI.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model_TransporteUI.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="Model_TransporteUI.edmx.diagram">
+      <DependentUpon>Model_TransporteUI.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model_TransporteUI.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model_TransporteUI.Context.cs</LastGenOutput>
+      <DependentUpon>Model_TransporteUI.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model_TransporteUI.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model_TransporteUI.edmx</DependentUpon>
+      <LastGenOutput>Model_TransporteUI.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
