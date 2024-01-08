@@ -10,13 +10,13 @@
 
 ## INSTALACIÓN
 Visual Studio Community 2022 - 17.8.2: 
-<a href="https://visualstudio.microsoft.com/es/downloads/" target="_blank">https://visualstudio.microsoft.com/es/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false</a>
+<a href="visualstudio.microsoft.com" target="_blank">https://visualstudio.microsoft.com/es/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false</a>
 <br>
 SQL Server Express: 
-<a href="https://www.microsoft.com/es-es/sql-server/sql-server-downloads" target="_blank">https://go.microsoft.com/fwlink/p/?linkid=2216019&clcid=0x40A&culture=es-es&country=es</a>
+<a href="www.microsoft.com" target="_blank">https://go.microsoft.com/fwlink/p/?linkid=2216019&clcid=0x40A&culture=es-es&country=es</a>
 <br>
 SQL Server Management Studio: 
-<a href="https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16" target="_blank">https://aka.ms/ssmsfullsetup?clcid=0x40a</a>
+<a href="learn.microsoft.com" target="_blank">https://aka.ms/ssmsfullsetup?clcid=0x40a</a>
 <br>
 
 Cargas de trabajo: <br>
