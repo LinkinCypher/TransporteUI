@@ -9,6 +9,7 @@
 
 namespace Infraestructura.AccesoDatos
 {
+    using Dominio.Modelo.Entidades;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;

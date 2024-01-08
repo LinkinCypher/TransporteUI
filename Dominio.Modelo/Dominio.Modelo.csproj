@@ -42,12 +42,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Entidades\detalles_reserva.cs">
+      <DependentUpon>Model_TransporteUI.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\estudiantes.cs">
+      <DependentUpon>Model_TransporteUI.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\Model_TransporteUI.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_TransporteUI.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\reservas.cs">
+      <DependentUpon>Model_TransporteUI.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstracciones\" />
-    <Folder Include="Entidades\" />
     <Folder Include="ObjetoValor\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Entidades\Model_TransporteUI.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model_TransporteUI.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

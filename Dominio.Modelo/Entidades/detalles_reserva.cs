@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Infraestructura.AccesoDatos
+namespace Dominio.Modelo.Entidades
 {
     using System;
     using System.Collections.Generic;
