@@ -1,4 +1,4 @@
-<h1>Bienvenido a un ejemplo de una API CRUD</h1>
+<h1>Ejemplo de CRUD en .NET</h1>
 
 <p align="center">
 	<a href="https://visualstudio.microsoft.com/es/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Visual_Studio_Icon_2022.svg/2048px-Visual_Studio_Icon_2022.svg.png" width="200" alt="Visual Studio 2022" /></a>
@@ -8,7 +8,7 @@
 
 <br>
 
-## INSTALACIÓN
+## INSTALACIï¿½N
 Visual Studio Community 2022 - 17.8.2: 
 <a href="https://visualstudio.microsoft.com/es/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false" target="_blank">visualstudio.microsoft.com</a>
 <br>
