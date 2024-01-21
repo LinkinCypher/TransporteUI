@@ -14,7 +14,5 @@ namespace UI.windows.VistaModelo
         public string casa { get; set; }
         public string referencia { get; set; }
         public string telefono { get; set; }
-        public Nullable<int> id_reserva { get; set; }
-        public Nullable<int> id_estudiante { get; set; }
     }
 }
