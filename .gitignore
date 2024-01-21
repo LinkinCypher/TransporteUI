@@ -59,3 +59,11 @@ Version.cpp
 */**/obj/Release
 **/bin/*
 **/obj/*
+UI.windows/bin/Debug/UI.windows.exe
+UI.windows/bin/Debug/UI.windows.exe
+UI.windows/bin/Debug/UI.windows.pdb
+UI.windows/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+UI.windows/obj/Debug/UI.windows.csproj.AssemblyReference.cache
+UI.windows/obj/Debug/UI.windows.csproj.GenerateResource.cache
+UI.windows/obj/Debug/UI.windows.exe
+UI.windows/obj/Debug/UI.windows.pdb
