@@ -26,9 +26,12 @@ namespace UI.windows.Formularios
         private void insertarReservas()
         {
             VistaModelo = new reservasVistaModelo();
-            VistaModelo.norte = txt_norte.Text;
-            VistaModelo.centro = txt_centro.Text;
-            VistaModelo.sur = txt_sur.Text;
+            if (rad_norte.Checked)
+                VistaModelo.norte = rad_norte.Text;
+            else if (rad_centro.Checked)
+                VistaModelo.centro = rad_centro.Text;
+            else if (rad_sur.Checked)
+                VistaModelo.sur = rad_sur.Text;
             if (ControladorAplicacion.InsertarReserva(VistaModelo))
             {
                 MessageBox.Show("Datos ingresados correctamente");

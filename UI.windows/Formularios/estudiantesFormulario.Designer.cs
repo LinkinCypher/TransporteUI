@@ -76,7 +76,7 @@
             this.bt_guardar.BackColor = System.Drawing.SystemColors.Highlight;
             this.bt_guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_guardar.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.bt_guardar.Location = new System.Drawing.Point(73, 362);
+            this.bt_guardar.Location = new System.Drawing.Point(84, 317);
             this.bt_guardar.Name = "bt_guardar";
             this.bt_guardar.Size = new System.Drawing.Size(182, 33);
             this.bt_guardar.TabIndex = 24;
@@ -87,7 +87,7 @@
             // txt_especialidad
             // 
             this.txt_especialidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_especialidad.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.txt_especialidad.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txt_especialidad.Location = new System.Drawing.Point(120, 152);
             this.txt_especialidad.Name = "txt_especialidad";
             this.txt_especialidad.Size = new System.Drawing.Size(169, 20);
@@ -96,17 +96,18 @@
             // lb_especialidad
             // 
             this.lb_especialidad.AutoSize = true;
-            this.lb_especialidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_especialidad.Location = new System.Drawing.Point(23, 159);
+            this.lb_especialidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_especialidad.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lb_especialidad.Location = new System.Drawing.Point(31, 159);
             this.lb_especialidad.Name = "lb_especialidad";
-            this.lb_especialidad.Size = new System.Drawing.Size(70, 13);
+            this.lb_especialidad.Size = new System.Drawing.Size(83, 13);
             this.lb_especialidad.TabIndex = 22;
             this.lb_especialidad.Text = "Especialidad:";
             // 
             // txt_edad
             // 
             this.txt_edad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_edad.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.txt_edad.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txt_edad.Location = new System.Drawing.Point(120, 117);
             this.txt_edad.Name = "txt_edad";
             this.txt_edad.Size = new System.Drawing.Size(169, 20);
@@ -115,27 +116,29 @@
             // lb_edad
             // 
             this.lb_edad.AutoSize = true;
-            this.lb_edad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_edad.Location = new System.Drawing.Point(23, 124);
+            this.lb_edad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_edad.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lb_edad.Location = new System.Drawing.Point(74, 124);
             this.lb_edad.Name = "lb_edad";
-            this.lb_edad.Size = new System.Drawing.Size(35, 13);
+            this.lb_edad.Size = new System.Drawing.Size(40, 13);
             this.lb_edad.TabIndex = 20;
             this.lb_edad.Text = "Edad:";
             // 
             // lb_cedula
             // 
             this.lb_cedula.AutoSize = true;
-            this.lb_cedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_cedula.Location = new System.Drawing.Point(23, 91);
+            this.lb_cedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_cedula.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lb_cedula.Location = new System.Drawing.Point(64, 91);
             this.lb_cedula.Name = "lb_cedula";
-            this.lb_cedula.Size = new System.Drawing.Size(43, 13);
+            this.lb_cedula.Size = new System.Drawing.Size(50, 13);
             this.lb_cedula.TabIndex = 18;
             this.lb_cedula.Text = "Cédula:";
             // 
             // txt_apellido
             // 
             this.txt_apellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_apellido.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.txt_apellido.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txt_apellido.Location = new System.Drawing.Point(120, 52);
             this.txt_apellido.Name = "txt_apellido";
             this.txt_apellido.Size = new System.Drawing.Size(169, 20);
@@ -144,17 +147,18 @@
             // lb_apellido
             // 
             this.lb_apellido.AutoSize = true;
-            this.lb_apellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_apellido.Location = new System.Drawing.Point(23, 59);
+            this.lb_apellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_apellido.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lb_apellido.Location = new System.Drawing.Point(58, 55);
             this.lb_apellido.Name = "lb_apellido";
-            this.lb_apellido.Size = new System.Drawing.Size(47, 13);
+            this.lb_apellido.Size = new System.Drawing.Size(56, 13);
             this.lb_apellido.TabIndex = 16;
             this.lb_apellido.Text = "Apellido:";
             // 
             // txt_nombre
             // 
             this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nombre.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.txt_nombre.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txt_nombre.Location = new System.Drawing.Point(120, 21);
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(169, 20);
@@ -163,10 +167,11 @@
             // lb_nombre
             // 
             this.lb_nombre.AutoSize = true;
-            this.lb_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_nombre.Location = new System.Drawing.Point(23, 28);
+            this.lb_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_nombre.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lb_nombre.Location = new System.Drawing.Point(60, 28);
             this.lb_nombre.Name = "lb_nombre";
-            this.lb_nombre.Size = new System.Drawing.Size(47, 13);
+            this.lb_nombre.Size = new System.Drawing.Size(54, 13);
             this.lb_nombre.TabIndex = 14;
             this.lb_nombre.Text = "Nombre:";
             // 
@@ -183,7 +188,7 @@
             // txt_semestre
             // 
             this.txt_semestre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_semestre.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.txt_semestre.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txt_semestre.Location = new System.Drawing.Point(120, 186);
             this.txt_semestre.Name = "txt_semestre";
             this.txt_semestre.Size = new System.Drawing.Size(169, 20);
@@ -192,27 +197,29 @@
             // lb_semestre
             // 
             this.lb_semestre.AutoSize = true;
-            this.lb_semestre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_semestre.Location = new System.Drawing.Point(23, 193);
+            this.lb_semestre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_semestre.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lb_semestre.Location = new System.Drawing.Point(51, 193);
             this.lb_semestre.Name = "lb_semestre";
-            this.lb_semestre.Size = new System.Drawing.Size(54, 13);
+            this.lb_semestre.Size = new System.Drawing.Size(63, 13);
             this.lb_semestre.TabIndex = 26;
             this.lb_semestre.Text = "Semestre:";
             // 
             // lb_fecha_Registro
             // 
             this.lb_fecha_Registro.AutoSize = true;
-            this.lb_fecha_Registro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_fecha_Registro.Location = new System.Drawing.Point(23, 227);
+            this.lb_fecha_Registro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_fecha_Registro.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lb_fecha_Registro.Location = new System.Drawing.Point(6, 226);
             this.lb_fecha_Registro.Name = "lb_fecha_Registro";
-            this.lb_fecha_Registro.Size = new System.Drawing.Size(92, 13);
+            this.lb_fecha_Registro.Size = new System.Drawing.Size(110, 13);
             this.lb_fecha_Registro.TabIndex = 28;
             this.lb_fecha_Registro.Text = "Fecha de registro:";
             // 
             // num_cedula
             // 
             this.num_cedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.num_cedula.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.num_cedula.ForeColor = System.Drawing.SystemColors.WindowText;
             this.num_cedula.Location = new System.Drawing.Point(120, 84);
             this.num_cedula.Maximum = new decimal(new int[] {
             1410065407,
@@ -233,6 +240,7 @@
             this.date_fecha_registro.Name = "date_fecha_registro";
             this.date_fecha_registro.Size = new System.Drawing.Size(164, 20);
             this.date_fecha_registro.TabIndex = 31;
+            this.date_fecha_registro.Value = new System.DateTime(2024, 1, 21, 0, 0, 0, 0);
             // 
             // groupBox1
             // 
@@ -251,7 +259,8 @@
             this.groupBox1.Controls.Add(this.txt_nombre);
             this.groupBox1.Controls.Add(this.lb_nombre);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(14, 78);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox1.Location = new System.Drawing.Point(23, 50);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(314, 261);
             this.groupBox1.TabIndex = 32;
