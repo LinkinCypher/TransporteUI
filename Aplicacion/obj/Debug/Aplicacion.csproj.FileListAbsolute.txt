@@ -1,0 +1,16 @@
+D:\Proyectos\TransporteUI\Aplicacion\bin\Debug\Aplicacion.dll
+D:\Proyectos\TransporteUI\Aplicacion\bin\Debug\Aplicacion.pdb
+D:\Proyectos\TransporteUI\Aplicacion\bin\Debug\Dominio.Modelo.dll
+D:\Proyectos\TransporteUI\Aplicacion\bin\Debug\Dominio.Servicio.dll
+D:\Proyectos\TransporteUI\Aplicacion\bin\Debug\Infraestructura.AccesoDatos.dll
+D:\Proyectos\TransporteUI\Aplicacion\bin\Debug\EntityFramework.dll
+D:\Proyectos\TransporteUI\Aplicacion\bin\Debug\Dominio.Modelo.pdb
+D:\Proyectos\TransporteUI\Aplicacion\bin\Debug\Dominio.Servicio.pdb
+D:\Proyectos\TransporteUI\Aplicacion\bin\Debug\Infraestructura.AccesoDatos.pdb
+D:\Proyectos\TransporteUI\Aplicacion\bin\Debug\Infraestructura.AccesoDatos.dll.config
+D:\Proyectos\TransporteUI\Aplicacion\bin\Debug\EntityFramework.xml
+D:\Proyectos\TransporteUI\Aplicacion\obj\Debug\Aplicacion.csproj.AssemblyReference.cache
+D:\Proyectos\TransporteUI\Aplicacion\obj\Debug\Aplicacion.csproj.CoreCompileInputs.cache
+D:\Proyectos\TransporteUI\Aplicacion\obj\Debug\Aplicacion.csproj.CopyComplete
+D:\Proyectos\TransporteUI\Aplicacion\obj\Debug\Aplicacion.dll
+D:\Proyectos\TransporteUI\Aplicacion\obj\Debug\Aplicacion.pdb

@@ -1,0 +1,6 @@
+D:\Proyectos\TransporteUI\Dominio.Servicio\bin\Debug\Dominio.Servicio.dll
+D:\Proyectos\TransporteUI\Dominio.Servicio\bin\Debug\Dominio.Servicio.pdb
+D:\Proyectos\TransporteUI\Dominio.Servicio\obj\Debug\Dominio.Servicio.csproj.AssemblyReference.cache
+D:\Proyectos\TransporteUI\Dominio.Servicio\obj\Debug\Dominio.Servicio.csproj.CoreCompileInputs.cache
+D:\Proyectos\TransporteUI\Dominio.Servicio\obj\Debug\Dominio.Servicio.dll
+D:\Proyectos\TransporteUI\Dominio.Servicio\obj\Debug\Dominio.Servicio.pdb

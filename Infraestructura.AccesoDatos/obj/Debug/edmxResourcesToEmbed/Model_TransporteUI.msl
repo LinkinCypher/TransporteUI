@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="transporteUI_DBModelStoreContainer" CdmEntityContainer="transporteUI_DBEntities">
+    <EntitySetMapping Name="detalles_reserva">
+      <EntityTypeMapping TypeName="transporteUI_DBModel.detalles_reserva">
+        <MappingFragment StoreEntitySet="detalles_reserva">
+          <ScalarProperty Name="id_detalle_reserva" ColumnName="id_detalle_reserva" />
+          <ScalarProperty Name="barrio" ColumnName="barrio" />
+          <ScalarProperty Name="calles" ColumnName="calles" />
+          <ScalarProperty Name="casa" ColumnName="casa" />
+          <ScalarProperty Name="referencia" ColumnName="referencia" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="id_reserva" ColumnName="id_reserva" />
+          <ScalarProperty Name="id_estudiante" ColumnName="id_estudiante" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="estudiantes">
+      <EntityTypeMapping TypeName="transporteUI_DBModel.estudiantes">
+        <MappingFragment StoreEntitySet="estudiantes">
+          <ScalarProperty Name="id_estudiante" ColumnName="id_estudiante" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="cedula" ColumnName="cedula" />
+          <ScalarProperty Name="edad" ColumnName="edad" />
+          <ScalarProperty Name="especialidad" ColumnName="especialidad" />
+          <ScalarProperty Name="semestre" ColumnName="semestre" />
+          <ScalarProperty Name="fecha_Registro" ColumnName="fecha_Registro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="reservas">
+      <EntityTypeMapping TypeName="transporteUI_DBModel.reservas">
+        <MappingFragment StoreEntitySet="reservas">
+          <ScalarProperty Name="id_reserva" ColumnName="id_reserva" />
+          <ScalarProperty Name="sur" ColumnName="sur" />
+          <ScalarProperty Name="centro" ColumnName="centro" />
+          <ScalarProperty Name="norte" ColumnName="norte" />
+          <ScalarProperty Name="id_estudiante" ColumnName="id_estudiante" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

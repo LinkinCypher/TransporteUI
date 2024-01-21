@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="transporteUI_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="detalles_reserva">
+    <Key>
+      <PropertyRef Name="id_detalle_reserva" />
+    </Key>
+    <Property Name="id_detalle_reserva" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="barrio" Type="varchar" MaxLength="100" />
+    <Property Name="calles" Type="varchar" MaxLength="100" />
+    <Property Name="casa" Type="varchar" MaxLength="100" />
+    <Property Name="referencia" Type="varchar" MaxLength="100" />
+    <Property Name="telefono" Type="varchar" MaxLength="100" />
+    <Property Name="id_reserva" Type="int" />
+    <Property Name="id_estudiante" Type="int" />
+  </EntityType>
+  <EntityType Name="estudiantes">
+    <Key>
+      <PropertyRef Name="id_estudiante" />
+    </Key>
+    <Property Name="id_estudiante" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="100" />
+    <Property Name="apellido" Type="varchar" MaxLength="100" />
+    <Property Name="cedula" Type="int" />
+    <Property Name="edad" Type="varchar" MaxLength="50" />
+    <Property Name="especialidad" Type="varchar" MaxLength="100" />
+    <Property Name="semestre" Type="varchar" MaxLength="50" />
+    <Property Name="fecha_Registro" Type="datetime" />
+  </EntityType>
+  <EntityType Name="reservas">
+    <Key>
+      <PropertyRef Name="id_reserva" />
+    </Key>
+    <Property Name="id_reserva" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sur" Type="varchar" MaxLength="10" />
+    <Property Name="centro" Type="varchar" MaxLength="10" />
+    <Property Name="norte" Type="varchar" MaxLength="10" />
+    <Property Name="id_estudiante" Type="int" />
+  </EntityType>
+  <Association Name="FK__detalles___id_es__5070F446">
+    <End Role="estudiantes" Type="Self.estudiantes" Multiplicity="0..1" />
+    <End Role="detalles_reserva" Type="Self.detalles_reserva" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estudiantes">
+        <PropertyRef Name="id_estudiante" />
+      </Principal>
+      <Dependent Role="detalles_reserva">
+        <PropertyRef Name="id_estudiante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__detalles___id_re__4F7CD00D">
+    <End Role="reservas" Type="Self.reservas" Multiplicity="0..1" />
+    <End Role="detalles_reserva" Type="Self.detalles_reserva" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="reservas">
+        <PropertyRef Name="id_reserva" />
+      </Principal>
+      <Dependent Role="detalles_reserva">
+        <PropertyRef Name="id_reserva" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__reservas__id_est__4CA06362">
+    <End Role="estudiantes" Type="Self.estudiantes" Multiplicity="0..1" />
+    <End Role="reservas" Type="Self.reservas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estudiantes">
+        <PropertyRef Name="id_estudiante" />
+      </Principal>
+      <Dependent Role="reservas">
+        <PropertyRef Name="id_estudiante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="transporteUI_DBModelStoreContainer">
+    <EntitySet Name="detalles_reserva" EntityType="Self.detalles_reserva" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="estudiantes" EntityType="Self.estudiantes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="reservas" EntityType="Self.reservas" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__detalles___id_es__5070F446" Association="Self.FK__detalles___id_es__5070F446">
+      <End Role="estudiantes" EntitySet="estudiantes" />
+      <End Role="detalles_reserva" EntitySet="detalles_reserva" />
+    </AssociationSet>
+    <AssociationSet Name="FK__detalles___id_re__4F7CD00D" Association="Self.FK__detalles___id_re__4F7CD00D">
+      <End Role="reservas" EntitySet="reservas" />
+      <End Role="detalles_reserva" EntitySet="detalles_reserva" />
+    </AssociationSet>
+    <AssociationSet Name="FK__reservas__id_est__4CA06362" Association="Self.FK__reservas__id_est__4CA06362">
+      <End Role="estudiantes" EntitySet="estudiantes" />
+      <End Role="reservas" EntitySet="reservas" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

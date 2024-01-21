@@ -1,0 +1,16 @@
+D:\Proyectos\TransporteUI\Infraestructura.AccesoDatos\bin\Debug\Infraestructura.AccesoDatos.dll.config
+D:\Proyectos\TransporteUI\Infraestructura.AccesoDatos\bin\Debug\Infraestructura.AccesoDatos.dll
+D:\Proyectos\TransporteUI\Infraestructura.AccesoDatos\bin\Debug\Infraestructura.AccesoDatos.pdb
+D:\Proyectos\TransporteUI\Infraestructura.AccesoDatos\bin\Debug\Dominio.Modelo.dll
+D:\Proyectos\TransporteUI\Infraestructura.AccesoDatos\bin\Debug\Dominio.Servicio.dll
+D:\Proyectos\TransporteUI\Infraestructura.AccesoDatos\bin\Debug\EntityFramework.dll
+D:\Proyectos\TransporteUI\Infraestructura.AccesoDatos\bin\Debug\EntityFramework.SqlServer.dll
+D:\Proyectos\TransporteUI\Infraestructura.AccesoDatos\bin\Debug\Dominio.Modelo.pdb
+D:\Proyectos\TransporteUI\Infraestructura.AccesoDatos\bin\Debug\Dominio.Servicio.pdb
+D:\Proyectos\TransporteUI\Infraestructura.AccesoDatos\bin\Debug\EntityFramework.xml
+D:\Proyectos\TransporteUI\Infraestructura.AccesoDatos\bin\Debug\EntityFramework.SqlServer.xml
+D:\Proyectos\TransporteUI\Infraestructura.AccesoDatos\obj\Debug\Infraestructura.AccesoDatos.csproj.AssemblyReference.cache
+D:\Proyectos\TransporteUI\Infraestructura.AccesoDatos\obj\Debug\Infraestructura.AccesoDatos.csproj.CoreCompileInputs.cache
+D:\Proyectos\TransporteUI\Infraestructura.AccesoDatos\obj\Debug\Infraestructura.AccesoDatos.csproj.CopyComplete
+D:\Proyectos\TransporteUI\Infraestructura.AccesoDatos\obj\Debug\Infraestructura.AccesoDatos.dll
+D:\Proyectos\TransporteUI\Infraestructura.AccesoDatos\obj\Debug\Infraestructura.AccesoDatos.pdb
