@@ -8,20 +8,21 @@
 
 <br>
 
-## INSTALACIÓN
+## INSTALACIÃ“N
 Visual Studio Community 2022 - 17.8.2: 
 <a href="https://visualstudio.microsoft.com/es/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false" target="_blank">visualstudio.microsoft.com</a>
-<br>
-SQL Server Express: 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2216019&clcid=0x40A&culture=es-es&country=es" target="_blank">www.microsoft.com</a>
-<br>
-SQL Server Management Studio: 
-<a href="https://aka.ms/ssmsfullsetup?clcid=0x40a" target="_blank">learn.microsoft.com</a>
-<br>
-
 Cargas de trabajo: <br>
 - Desarrollo de escritorio de .NET <br>
 Opcional: <br>
 - Herramiestas de desarrollo de .NET Framework 4.8
 - Herramiestas de Entity Framework 6
 - Paquete de compatibilidad de bibliotecas
+
+<br>
+SQL Server Express: 
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2216019&clcid=0x40A&culture=es-es&country=es" target="_blank">www.microsoft.com</a>
+
+<br>
+SQL Server Management Studio: 
+<a href="https://aka.ms/ssmsfullsetup?clcid=0x40a" target="_blank">learn.microsoft.com</a>
+<br>
