@@ -31,7 +31,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dg_estudiantes = new System.Windows.Forms.DataGridView();
             this.bt_guardar = new System.Windows.Forms.Button();
-            this.txt_especialidad = new System.Windows.Forms.TextBox();
             this.lb_especialidad = new System.Windows.Forms.Label();
             this.txt_edad = new System.Windows.Forms.TextBox();
             this.lb_edad = new System.Windows.Forms.Label();
@@ -41,12 +40,13 @@
             this.txt_nombre = new System.Windows.Forms.TextBox();
             this.lb_nombre = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_semestre = new System.Windows.Forms.TextBox();
             this.lb_semestre = new System.Windows.Forms.Label();
             this.lb_fecha_Registro = new System.Windows.Forms.Label();
             this.num_cedula = new System.Windows.Forms.NumericUpDown();
             this.date_fecha_registro = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lis_semestre = new System.Windows.Forms.ListBox();
+            this.lis_especialidad = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.dg_estudiantes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_cedula)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -83,15 +83,6 @@
             this.bt_guardar.Text = "GUARDAR";
             this.bt_guardar.UseVisualStyleBackColor = false;
             this.bt_guardar.Click += new System.EventHandler(this.bt_guardar_Click);
-            // 
-            // txt_especialidad
-            // 
-            this.txt_especialidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_especialidad.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txt_especialidad.Location = new System.Drawing.Point(120, 152);
-            this.txt_especialidad.Name = "txt_especialidad";
-            this.txt_especialidad.Size = new System.Drawing.Size(169, 20);
-            this.txt_especialidad.TabIndex = 23;
             // 
             // lb_especialidad
             // 
@@ -185,15 +176,6 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "ESTUDIANTES";
             // 
-            // txt_semestre
-            // 
-            this.txt_semestre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_semestre.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txt_semestre.Location = new System.Drawing.Point(120, 186);
-            this.txt_semestre.Name = "txt_semestre";
-            this.txt_semestre.Size = new System.Drawing.Size(169, 20);
-            this.txt_semestre.TabIndex = 27;
-            // 
             // lb_semestre
             // 
             this.lb_semestre.AutoSize = true;
@@ -244,12 +226,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lis_especialidad);
+            this.groupBox1.Controls.Add(this.lis_semestre);
             this.groupBox1.Controls.Add(this.date_fecha_registro);
             this.groupBox1.Controls.Add(this.num_cedula);
             this.groupBox1.Controls.Add(this.lb_fecha_Registro);
-            this.groupBox1.Controls.Add(this.txt_semestre);
             this.groupBox1.Controls.Add(this.lb_semestre);
-            this.groupBox1.Controls.Add(this.txt_especialidad);
             this.groupBox1.Controls.Add(this.lb_especialidad);
             this.groupBox1.Controls.Add(this.txt_edad);
             this.groupBox1.Controls.Add(this.lb_edad);
@@ -266,6 +248,44 @@
             this.groupBox1.TabIndex = 32;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DATOS DEL ESTUDIANTE";
+            // 
+            // lis_semestre
+            // 
+            this.lis_semestre.FormattingEnabled = true;
+            this.lis_semestre.Items.AddRange(new object[] {
+            "Primero",
+            "Segundo",
+            "Tercero",
+            "Cuarto",
+            "Quinto",
+            "Sexto",
+            "Séptimo",
+            "Octavo",
+            "Noveno",
+            "Décimo"});
+            this.lis_semestre.Location = new System.Drawing.Point(118, 189);
+            this.lis_semestre.Name = "lis_semestre";
+            this.lis_semestre.Size = new System.Drawing.Size(171, 17);
+            this.lis_semestre.TabIndex = 33;
+            // 
+            // lis_especialidad
+            // 
+            this.lis_especialidad.FormattingEnabled = true;
+            this.lis_especialidad.Items.AddRange(new object[] {
+            "Medicina",
+            "Telecomunicaciones",
+            "Informática",
+            "Sistemas",
+            "Electrónica",
+            "Educación",
+            "Diseño",
+            "Administración",
+            "Contabilidad",
+            "Psicología"});
+            this.lis_especialidad.Location = new System.Drawing.Point(118, 155);
+            this.lis_especialidad.Name = "lis_especialidad";
+            this.lis_especialidad.Size = new System.Drawing.Size(171, 17);
+            this.lis_especialidad.TabIndex = 34;
             // 
             // estudiantesFormulario
             // 
@@ -292,7 +312,6 @@
 
         private System.Windows.Forms.DataGridView dg_estudiantes;
         private System.Windows.Forms.Button bt_guardar;
-        private System.Windows.Forms.TextBox txt_especialidad;
         private System.Windows.Forms.Label lb_especialidad;
         private System.Windows.Forms.TextBox txt_edad;
         private System.Windows.Forms.Label lb_edad;
@@ -302,11 +321,12 @@
         private System.Windows.Forms.TextBox txt_nombre;
         private System.Windows.Forms.Label lb_nombre;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt_semestre;
         private System.Windows.Forms.Label lb_semestre;
         private System.Windows.Forms.Label lb_fecha_Registro;
         private System.Windows.Forms.NumericUpDown num_cedula;
         private System.Windows.Forms.DateTimePicker date_fecha_registro;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ListBox lis_semestre;
+        private System.Windows.Forms.ListBox lis_especialidad;
     }
 }

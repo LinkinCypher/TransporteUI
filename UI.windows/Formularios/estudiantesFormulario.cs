@@ -30,8 +30,8 @@ namespace UI.windows.Formularios
             VistaModelo.apellido = txt_apellido.Text;
             VistaModelo.cedula = (int)num_cedula.Value;
             VistaModelo.edad = txt_edad.Text;
-            VistaModelo.especialidad = txt_especialidad.Text;
-            VistaModelo.semestre = txt_semestre.Text;
+            VistaModelo.especialidad = lis_especialidad.Text;
+            VistaModelo.semestre = lis_semestre.Text;
             VistaModelo.fecha_Registro = date_fecha_registro.Value;
             if (ControladorAplicacion.InsertarEstudiante(VistaModelo))
             {
