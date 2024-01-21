@@ -177,6 +177,11 @@
             // num_cedula
             // 
             this.num_cedula.Location = new System.Drawing.Point(109, 121);
+            this.num_cedula.Maximum = new decimal(new int[] {
+            1410065407,
+            2,
+            0,
+            0});
             this.num_cedula.Name = "num_cedula";
             this.num_cedula.Size = new System.Drawing.Size(165, 20);
             this.num_cedula.TabIndex = 30;

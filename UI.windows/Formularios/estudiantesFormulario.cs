@@ -28,7 +28,7 @@ namespace UI.windows.Formularios
             VistaModelo = new estudiantesVistaModelo();
             VistaModelo.nombre =   txt_nombre.Text;
             VistaModelo.apellido = txt_apellido.Text;
-            //VistaModelo.cedula = num_cedula.Value;
+            VistaModelo.cedula = (int)num_cedula.Value;
             VistaModelo.edad = txt_edad.Text;
             VistaModelo.especialidad = txt_especialidad.Text;
             VistaModelo.semestre = txt_semestre.Text;

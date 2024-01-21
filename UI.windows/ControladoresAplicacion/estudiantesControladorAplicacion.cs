@@ -27,7 +27,8 @@ namespace UI.windows.ControladoresAplicacion
                 nuevoET.cedula = nuevoVistaModelo.cedula;
                 nuevoET.edad = nuevoVistaModelo.edad;
                 nuevoET.especialidad = nuevoVistaModelo.especialidad;
-                nuevoVistaModelo.semestre = nuevoVistaModelo.semestre;
+                nuevoET.semestre = nuevoVistaModelo.semestre;
+                nuevoET.fecha_Registro = nuevoVistaModelo.fecha_Registro;
                 EstudiantesServicios.InsertarEstudiante(nuevoET);
                 return true;
             }
@@ -77,6 +78,7 @@ namespace UI.windows.ControladoresAplicacion
                         edad = item.edad,
                         especialidad = item.especialidad,
                         semestre = item.semestre,
+                        fecha_Registro = item.fecha_Registro,
                     });
                 }
                 return resultadoVistaModelo;
