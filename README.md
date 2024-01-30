@@ -34,16 +34,16 @@ Ubicación del proyecto: <br>
 const string inputFile = @"C:\Proyectos\TransporteUI\Infraestructura.AccesoDatos\Model_TransporteUI.edmx"; <br>
 <br>
 Conexión con la base de datos <br>
+Lo más importante es <b>source=PC-Cr</b> que contiene el nombre del motor de la base de datos.
 Copiar de: 4.Infraestructura > Infraestructura.AccesoDatos > App.Config <br>
-```bash
 Ejemplo:
+```bash
 <connectionStrings>
   <add name="transporteUI_DBEntities" connectionString="metadata=res://*/Model_TransporteUI.csdl|res://*/Model_TransporteUI.ssdl|res://*/Model_TransporteUI.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=PC-Cr;initial catalog=transporteUI_DB;integrated security=True;trustservercertificate=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
 </connectionStrings>
 ```
 Pegar en: 1.InterfazUsuario > UI.windows > VistaModelo > App.Config <br>
 ```bash
-Ejemplo:
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
     <startup> 
