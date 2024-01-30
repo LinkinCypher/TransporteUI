@@ -26,3 +26,31 @@ SQL Server Express:
 SQL Server Management Studio: 
 <a href="https://aka.ms/ssmsfullsetup?clcid=0x40a" target="_blank">learn.microsoft.com</a>
 <br>
+
+<br>
+
+## CONFIGURACIÓN
+Ubicación del proyecto: <br>
+const string inputFile = @"C:\Proyectos\TransporteUI\Infraestructura.AccesoDatos\Model_TransporteUI.edmx"; <br>
+<br>
+Conexión con la base de datos <br>
+Copiar de: 4.Infraestructura > Infraestructura.AccesoDatos > App.Config <br>
+```bash
+Ejemplo:
+<connectionStrings>
+  <add name="transporteUI_DBEntities" connectionString="metadata=res://*/Model_TransporteUI.csdl|res://*/Model_TransporteUI.ssdl|res://*/Model_TransporteUI.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=PC-Cr;initial catalog=transporteUI_DB;integrated security=True;trustservercertificate=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+</connectionStrings>
+```
+Pegar en: 1.InterfazUsuario > UI.windows > VistaModelo > App.Config <br>
+```bash
+Ejemplo:
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8" />
+    </startup>
+  <connectionStrings>
+    <add name="transporteUI_DBEntities" connectionString="metadata=res://*/Model_TransporteUI.csdl|res://*/Model_TransporteUI.ssdl|res://*/Model_TransporteUI.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=PC-Cr;initial catalog=transporteUI_DB;integrated security=True;trustservercertificate=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+  </connectionStrings>
+</configuration>
+```

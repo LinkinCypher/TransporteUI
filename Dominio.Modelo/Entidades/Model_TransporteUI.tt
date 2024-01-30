@@ -2,7 +2,7 @@
 <#@ include file="EF6.Utility.CS.ttinclude"#><#@ 
  output extension=".cs"#><#
 
-const string inputFile = @"D:\Proyectos\TransporteUI\Infraestructura.AccesoDatos\Model_TransporteUI.edmx";
+const string inputFile = @"C:\Proyectos\TransporteUI\Infraestructura.AccesoDatos\Model_TransporteUI.edmx";
 var textTransform = DynamicTextTransformation.Create(this);
 var code = new CodeGenerationTools(this);
 var ef = new MetadataTools(this);
