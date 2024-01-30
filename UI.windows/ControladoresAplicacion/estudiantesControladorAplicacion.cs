@@ -22,13 +22,13 @@ namespace UI.windows.ControladoresAplicacion
             estudiantes nuevoET = new estudiantes();
             try
             {
-                nuevoET.nombre = nuevoVistaModelo.nombre;
-                nuevoET.apellido = nuevoVistaModelo.apellido;
-                nuevoET.cedula = nuevoVistaModelo.cedula;
-                nuevoET.edad = nuevoVistaModelo.edad;
-                nuevoET.especialidad = nuevoVistaModelo.especialidad;
-                nuevoET.semestre = nuevoVistaModelo.semestre;
-                nuevoET.fecha_Registro = nuevoVistaModelo.fecha_Registro;
+                nuevoET.nombre = nuevoVistaModelo.Nombre;
+                nuevoET.apellido = nuevoVistaModelo.Apellido;
+                nuevoET.cedula = nuevoVistaModelo.Cedula;
+                nuevoET.edad = nuevoVistaModelo.Edad;
+                nuevoET.especialidad = nuevoVistaModelo.Especialidad;
+                nuevoET.semestre = nuevoVistaModelo.Semestre;
+                nuevoET.fecha_Registro = nuevoVistaModelo.Fecha_Registro;
                 EstudiantesServicios.InsertarEstudiante(nuevoET);
                 return true;
             }
@@ -44,13 +44,13 @@ namespace UI.windows.ControladoresAplicacion
             estudiantes actualizarET = new estudiantes();
             try
             {
-                actualizarET.id_estudiante = actualizarVistaModelo.id_estudiante;
-                actualizarET.nombre = actualizarVistaModelo.nombre;
-                actualizarET.apellido = actualizarVistaModelo.apellido;
-                actualizarET.cedula = actualizarVistaModelo.cedula;
-                actualizarET.edad = actualizarVistaModelo.edad;
-                actualizarET.especialidad = actualizarVistaModelo.especialidad;
-                actualizarET.semestre = actualizarVistaModelo.semestre;
+                actualizarET.id_estudiante = actualizarVistaModelo.Id_estudiante;
+                actualizarET.nombre = actualizarVistaModelo.Nombre;
+                actualizarET.apellido = actualizarVistaModelo.Apellido;
+                actualizarET.cedula = actualizarVistaModelo.Cedula;
+                actualizarET.edad = actualizarVistaModelo.Edad;
+                actualizarET.especialidad = actualizarVistaModelo.Especialidad;
+                actualizarET.semestre = actualizarVistaModelo.Semestre;
                 EstudiantesServicios.ActualizarEstudiante(actualizarET);
                 return true;
             }
@@ -71,14 +71,14 @@ namespace UI.windows.ControladoresAplicacion
                 {
                     resultadoVistaModelo.Add(new estudiantesVistaModelo
                     {
-                        id_estudiante = item.id_estudiante,
-                        nombre = item.nombre,
-                        apellido = item.apellido,
-                        cedula = item.cedula,
-                        edad = item.edad,
-                        especialidad = item.especialidad,
-                        semestre = item.semestre,
-                        fecha_Registro = item.fecha_Registro,
+                        Id_estudiante = item.id_estudiante,
+                        Nombre = item.nombre,
+                        Apellido = item.apellido,
+                        Cedula = item.cedula,
+                        Edad = item.edad,
+                        Especialidad = item.especialidad,
+                        Semestre = item.semestre,
+                        Fecha_Registro = item.fecha_Registro,
                     });
                 }
                 return resultadoVistaModelo;

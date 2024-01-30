@@ -8,13 +8,13 @@ namespace UI.windows.VistaModelo
 {
     public class estudiantesVistaModelo
     {
-        public int id_estudiante { get; set; }
-        public string nombre { get; set; }
-        public string apellido { get; set; }
-        public Nullable<int> cedula { get; set; }
-        public string edad { get; set; }
-        public string especialidad { get; set; }
-        public string semestre { get; set; }
-        public Nullable<System.DateTime> fecha_Registro { get; set; }
+        public int Id_estudiante { get; set; }
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
+        public Nullable<int> Cedula { get; set; }
+        public string Edad { get; set; }
+        public string Especialidad { get; set; }
+        public string Semestre { get; set; }
+        public Nullable<System.DateTime> Fecha_Registro { get; set; }
     }
 }

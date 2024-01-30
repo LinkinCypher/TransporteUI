@@ -26,13 +26,13 @@ namespace UI.windows.Formularios
         private void insertarEstudiantes()
         {
             VistaModelo = new estudiantesVistaModelo();
-            VistaModelo.nombre =   txt_nombre.Text;
-            VistaModelo.apellido = txt_apellido.Text;
-            VistaModelo.cedula = (int)num_cedula.Value;
-            VistaModelo.edad = txt_edad.Text;
-            VistaModelo.especialidad = lis_especialidad.Text;
-            VistaModelo.semestre = lis_semestre.Text;
-            VistaModelo.fecha_Registro = date_fecha_registro.Value;
+            VistaModelo.Nombre =   txt_nombre.Text;
+            VistaModelo.Apellido = txt_apellido.Text;
+            VistaModelo.Cedula = (int)num_cedula.Value;
+            VistaModelo.Edad = txt_edad.Text;
+            VistaModelo.Especialidad = lis_especialidad.Text;
+            VistaModelo.Semestre = lis_semestre.Text;
+            VistaModelo.Fecha_Registro = date_fecha_registro.Value;
             if (ControladorAplicacion.InsertarEstudiante(VistaModelo))
             {
                 MessageBox.Show("Datos ingresados correctamente");

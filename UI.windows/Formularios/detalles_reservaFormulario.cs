@@ -26,11 +26,11 @@ namespace UI.windows.Formularios
         private void insertarDetalles_Reserva()
         {
             VistaModelo = new detalles_reservaVistaModelo();
-            VistaModelo.barrio = txt_barrio.Text;
-            VistaModelo.calles = txt_calles.Text;
-            VistaModelo.casa = txt_casa.Text;
-            VistaModelo.referencia = txt_referencia.Text;
-            VistaModelo.telefono = txt_telefono.Text;
+            VistaModelo.Barrio = txt_barrio.Text;
+            VistaModelo.Calles = txt_calles.Text;
+            VistaModelo.Casa = txt_casa.Text;
+            VistaModelo.Referencia = txt_referencia.Text;
+            VistaModelo.Telefono = txt_telefono.Text;
             if (ControladorAplicacion.InsertarDetalle_Reserva(VistaModelo))
             {
                 MessageBox.Show("Datos ingresados correctamente");
