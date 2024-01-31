@@ -21,6 +21,7 @@ namespace UI.windows.Formularios
         {
             InitializeComponent();
             ControladorAplicacion = new estudiantesControladorAplicacion();
+            dg_estudiantes.CellDoubleClick += dg_estudiantes_CellDoubleClick;
         }
 
         private void insertarEstudiantes()
@@ -56,7 +57,32 @@ namespace UI.windows.Formularios
 
         private void bt_editar_Click(object sender, EventArgs e)
         {
+            if (dg_estudiantes.SelectedRows.Count > 0)
+            {
+                VistaModelo = new estudiantesVistaModelo();
+                VistaModelo.Id_estudiante = (int)dg_estudiantes.SelectedRows[0].Cells["id_estudiante"].Value;
+                VistaModelo.Nombre = txt_nombre.Text;
+                VistaModelo.Apellido = txt_apellido.Text;
+                VistaModelo.Cedula = (int)num_cedula.Value;
+                VistaModelo.Edad = txt_edad.Text;
+                VistaModelo.Especialidad = com_especialidad.Text;
+                VistaModelo.Semestre = com_semestre.Text;
+                VistaModelo.Fecha_Registro = date_fecha_registro.Value;
 
+                if (ControladorAplicacion.ActualizarEstudiante(VistaModelo))
+                {
+                    MessageBox.Show("Estudiante actualizado correctamente");
+                    listarEstudiantes();
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo actualizar el estudiante");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor selecciona un estudiante");
+            }
         }
 
 
@@ -88,6 +114,21 @@ namespace UI.windows.Formularios
             {
                 MessageBox.Show("Selecciona una fila antes de eliminar");
             }
+        }
+
+        private void dg_estudiantes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Obtenemos la fila seleccionada
+            DataGridViewRow row = dg_estudiantes.Rows[e.RowIndex];
+
+            // Rellenamos los controles con los datos de la fila
+            txt_nombre.Text = row.Cells["nombre"].Value.ToString();
+            txt_apellido.Text = row.Cells["apellido"].Value.ToString();
+            num_cedula.Value = Convert.ToInt32(row.Cells["cedula"].Value);
+            txt_edad.Text = row.Cells["edad"].Value.ToString();
+            com_especialidad.Text = row.Cells["especialidad"].Value.ToString();
+            com_semestre.Text = row.Cells["semestre"].Value.ToString();
+            date_fecha_registro.Value = Convert.ToDateTime(row.Cells["fecha_registro"].Value);
         }
 
         private void estudiantesFormulario_Load(object sender, EventArgs e)

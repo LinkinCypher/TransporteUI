@@ -51,6 +51,7 @@ namespace UI.windows.ControladoresAplicacion
                 actualizarET.edad = actualizarVistaModelo.Edad;
                 actualizarET.especialidad = actualizarVistaModelo.Especialidad;
                 actualizarET.semestre = actualizarVistaModelo.Semestre;
+                actualizarET.fecha_Registro = actualizarVistaModelo.Fecha_Registro;
                 EstudiantesServicios.ActualizarEstudiante(actualizarET);
                 return true;
             }

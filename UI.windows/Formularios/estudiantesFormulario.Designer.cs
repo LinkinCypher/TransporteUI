@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dg_estudiantes = new System.Windows.Forms.DataGridView();
             this.bt_guardar = new System.Windows.Forms.Button();
             this.lb_especialidad = new System.Windows.Forms.Label();
@@ -58,14 +58,14 @@
             // 
             this.dg_estudiantes.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dg_estudiantes.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dg_estudiantes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dg_estudiantes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dg_estudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_estudiantes.EnableHeadersVisualStyles = false;
             this.dg_estudiantes.Location = new System.Drawing.Point(369, 50);
@@ -91,7 +91,7 @@
             this.lb_especialidad.AutoSize = true;
             this.lb_especialidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_especialidad.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lb_especialidad.Location = new System.Drawing.Point(31, 159);
+            this.lb_especialidad.Location = new System.Drawing.Point(29, 159);
             this.lb_especialidad.Name = "lb_especialidad";
             this.lb_especialidad.Size = new System.Drawing.Size(83, 13);
             this.lb_especialidad.TabIndex = 22;
@@ -111,7 +111,7 @@
             this.lb_edad.AutoSize = true;
             this.lb_edad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_edad.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lb_edad.Location = new System.Drawing.Point(74, 124);
+            this.lb_edad.Location = new System.Drawing.Point(70, 124);
             this.lb_edad.Name = "lb_edad";
             this.lb_edad.Size = new System.Drawing.Size(40, 13);
             this.lb_edad.TabIndex = 20;
@@ -122,7 +122,7 @@
             this.lb_cedula.AutoSize = true;
             this.lb_cedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_cedula.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lb_cedula.Location = new System.Drawing.Point(64, 91);
+            this.lb_cedula.Location = new System.Drawing.Point(62, 91);
             this.lb_cedula.Name = "lb_cedula";
             this.lb_cedula.Size = new System.Drawing.Size(50, 13);
             this.lb_cedula.TabIndex = 18;
@@ -162,7 +162,7 @@
             this.lb_nombre.AutoSize = true;
             this.lb_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_nombre.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lb_nombre.Location = new System.Drawing.Point(60, 28);
+            this.lb_nombre.Location = new System.Drawing.Point(58, 28);
             this.lb_nombre.Name = "lb_nombre";
             this.lb_nombre.Size = new System.Drawing.Size(54, 13);
             this.lb_nombre.TabIndex = 14;
@@ -183,7 +183,7 @@
             this.lb_semestre.AutoSize = true;
             this.lb_semestre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_semestre.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lb_semestre.Location = new System.Drawing.Point(51, 193);
+            this.lb_semestre.Location = new System.Drawing.Point(47, 193);
             this.lb_semestre.Name = "lb_semestre";
             this.lb_semestre.Size = new System.Drawing.Size(63, 13);
             this.lb_semestre.TabIndex = 26;
@@ -194,7 +194,7 @@
             this.lb_fecha_Registro.AutoSize = true;
             this.lb_fecha_Registro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_fecha_Registro.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lb_fecha_Registro.Location = new System.Drawing.Point(6, 226);
+            this.lb_fecha_Registro.Location = new System.Drawing.Point(4, 226);
             this.lb_fecha_Registro.Name = "lb_fecha_Registro";
             this.lb_fecha_Registro.Size = new System.Drawing.Size(110, 13);
             this.lb_fecha_Registro.TabIndex = 28;
@@ -242,7 +242,7 @@
             this.groupBox1.Controls.Add(this.lb_apellido);
             this.groupBox1.Controls.Add(this.txt_nombre);
             this.groupBox1.Controls.Add(this.lb_nombre);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox1.Location = new System.Drawing.Point(23, 50);
             this.groupBox1.Name = "groupBox1";

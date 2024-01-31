@@ -90,6 +90,7 @@
             // lb_telefono
             // 
             this.lb_telefono.AutoSize = true;
+            this.lb_telefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_telefono.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lb_telefono.Location = new System.Drawing.Point(30, 182);
             this.lb_telefono.Name = "lb_telefono";
@@ -108,6 +109,7 @@
             // lb_referencia
             // 
             this.lb_referencia.AutoSize = true;
+            this.lb_referencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_referencia.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lb_referencia.Location = new System.Drawing.Point(18, 139);
             this.lb_referencia.Name = "lb_referencia";
@@ -126,6 +128,7 @@
             // lb_casa
             // 
             this.lb_casa.AutoSize = true;
+            this.lb_casa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_casa.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lb_casa.Location = new System.Drawing.Point(52, 104);
             this.lb_casa.Name = "lb_casa";
@@ -144,6 +147,7 @@
             // lb_calles
             // 
             this.lb_calles.AutoSize = true;
+            this.lb_calles.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_calles.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lb_calles.Location = new System.Drawing.Point(46, 66);
             this.lb_calles.Name = "lb_calles";
@@ -162,6 +166,7 @@
             // lb_barrio
             // 
             this.lb_barrio.AutoSize = true;
+            this.lb_barrio.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_barrio.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lb_barrio.Location = new System.Drawing.Point(47, 30);
             this.lb_barrio.Name = "lb_barrio";
@@ -191,7 +196,7 @@
             this.groupBox1.Controls.Add(this.lb_calles);
             this.groupBox1.Controls.Add(this.txt_barrio);
             this.groupBox1.Controls.Add(this.lb_barrio);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox1.Location = new System.Drawing.Point(31, 50);
             this.groupBox1.Name = "groupBox1";
