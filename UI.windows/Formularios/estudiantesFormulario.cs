@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Dominio.Modelo.Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -48,6 +50,7 @@ namespace UI.windows.Formularios
         {
             dg_estudiantes.DataSource = ControladorAplicacion.ListarEstudiantes();
         }
+
 
         private void bt_guardar_Click(object sender, EventArgs e)
         {
@@ -131,9 +134,36 @@ namespace UI.windows.Formularios
             date_fecha_registro.Value = Convert.ToDateTime(row.Cells["fecha_registro"].Value);
         }
 
+
+
         private void estudiantesFormulario_Load(object sender, EventArgs e)
         {
             listarEstudiantes();
+        }
+
+        private void btn_Buscar_Click(object sender, EventArgs e)
+        {
+            string cedula = txt_buscar_cedula.Text;
+
+            var resultado = ControladorAplicacion.BuscarPorCedula(cedula);
+
+            if (resultado.Count > 0)
+            {
+                var estudiante = resultado[0];
+                txt_nombre.Text = estudiante.Nombre;
+                txt_apellido.Text = estudiante.Apellido;
+                num_cedula.Text = estudiante.Cedula?.ToString() ?? "0";
+                txt_edad.Text = estudiante.Edad;
+                com_especialidad.Text = estudiante.Especialidad;
+                com_semestre.Text = estudiante.Semestre;
+                date_fecha_registro.Text = estudiante.Fecha_Registro?.ToString() ?? DateTime.Today.ToString();
+                MessageBox.Show("Estudiante encontrado");
+            }
+            else
+            {
+                MessageBox.Show("No se encontró el estudiante");
+            }
+
         }
     }
 }

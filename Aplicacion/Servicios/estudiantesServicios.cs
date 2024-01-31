@@ -33,6 +33,13 @@ namespace Aplicacion.Servicios
             return estudiantesRepositorio.GetAll();
         }
 
+        public IEnumerable<estudiantes> BuscarPorCedula(string cedula)
+        {
+            return estudiantesRepositorio.GetAll()
+                       .Where(e => e.cedula.ToString() == cedula)
+                       .ToList();
+        }
+
         public void EliminarEstudiante(int id)
         {
             estudiantesRepositorio.Delete(id);

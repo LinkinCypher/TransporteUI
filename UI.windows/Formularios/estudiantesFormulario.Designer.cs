@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dg_estudiantes = new System.Windows.Forms.DataGridView();
             this.bt_guardar = new System.Windows.Forms.Button();
             this.lb_especialidad = new System.Windows.Forms.Label();
@@ -45,10 +45,12 @@
             this.num_cedula = new System.Windows.Forms.NumericUpDown();
             this.date_fecha_registro = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.com_semestre = new System.Windows.Forms.ComboBox();
+            this.com_especialidad = new System.Windows.Forms.ComboBox();
             this.bt_eliminar = new System.Windows.Forms.Button();
             this.bt_editar = new System.Windows.Forms.Button();
-            this.com_especialidad = new System.Windows.Forms.ComboBox();
-            this.com_semestre = new System.Windows.Forms.ComboBox();
+            this.btn_Buscar = new System.Windows.Forms.Button();
+            this.txt_buscar_cedula = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dg_estudiantes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_cedula)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -58,14 +60,14 @@
             // 
             this.dg_estudiantes.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dg_estudiantes.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dg_estudiantes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dg_estudiantes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dg_estudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_estudiantes.EnableHeadersVisualStyles = false;
             this.dg_estudiantes.Location = new System.Drawing.Point(369, 50);
@@ -172,7 +174,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(743, 32);
+            this.label1.Location = new System.Drawing.Point(366, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 16);
             this.label1.TabIndex = 13;
@@ -251,6 +253,44 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DATOS DEL ESTUDIANTE";
             // 
+            // com_semestre
+            // 
+            this.com_semestre.FormattingEnabled = true;
+            this.com_semestre.Items.AddRange(new object[] {
+            "Primero",
+            "Segundo",
+            "Tercero",
+            "Cuarto",
+            "Quinto",
+            "Sexto",
+            "Séptimo",
+            "Octavo",
+            "Noveno",
+            "Décimo"});
+            this.com_semestre.Location = new System.Drawing.Point(120, 185);
+            this.com_semestre.Name = "com_semestre";
+            this.com_semestre.Size = new System.Drawing.Size(164, 21);
+            this.com_semestre.TabIndex = 35;
+            // 
+            // com_especialidad
+            // 
+            this.com_especialidad.FormattingEnabled = true;
+            this.com_especialidad.Items.AddRange(new object[] {
+            "Medicina",
+            "Telecomunicaciones",
+            "Informática",
+            "Sistemas",
+            "Electrónica",
+            "Educación",
+            "Diseño",
+            "Administración",
+            "Contabilidad",
+            "Psicología"});
+            this.com_especialidad.Location = new System.Drawing.Point(120, 151);
+            this.com_especialidad.Name = "com_especialidad";
+            this.com_especialidad.Size = new System.Drawing.Size(164, 21);
+            this.com_especialidad.TabIndex = 35;
+            // 
             // bt_eliminar
             // 
             this.bt_eliminar.BackColor = System.Drawing.Color.DarkRed;
@@ -277,49 +317,30 @@
             this.bt_editar.UseVisualStyleBackColor = false;
             this.bt_editar.Click += new System.EventHandler(this.bt_editar_Click);
             // 
-            // com_especialidad
+            // btn_Buscar
             // 
-            this.com_especialidad.FormattingEnabled = true;
-            this.com_especialidad.Items.AddRange(new object[] {
-            "Medicina",
-            "Telecomunicaciones",
-            "Informática",
-            "Sistemas",
-            "Electrónica",
-            "Educación",
-            "Diseño",
-            "Administración",
-            "Contabilidad",
-            "Psicología"});
-            this.com_especialidad.Location = new System.Drawing.Point(120, 151);
-            this.com_especialidad.Name = "com_especialidad";
-            this.com_especialidad.Size = new System.Drawing.Size(164, 21);
-            this.com_especialidad.TabIndex = 35;
+            this.btn_Buscar.Location = new System.Drawing.Point(1052, 22);
+            this.btn_Buscar.Name = "btn_Buscar";
+            this.btn_Buscar.Size = new System.Drawing.Size(161, 22);
+            this.btn_Buscar.TabIndex = 35;
+            this.btn_Buscar.Text = "Buscar por cédula";
+            this.btn_Buscar.UseVisualStyleBackColor = true;
+            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
             // 
-            // com_semestre
+            // txt_buscar_cedula
             // 
-            this.com_semestre.FormattingEnabled = true;
-            this.com_semestre.Items.AddRange(new object[] {
-            "Primero",
-            "Segundo",
-            "Tercero",
-            "Cuarto",
-            "Quinto",
-            "Sexto",
-            "Séptimo",
-            "Octavo",
-            "Noveno",
-            "Décimo"});
-            this.com_semestre.Location = new System.Drawing.Point(120, 185);
-            this.com_semestre.Name = "com_semestre";
-            this.com_semestre.Size = new System.Drawing.Size(164, 21);
-            this.com_semestre.TabIndex = 35;
+            this.txt_buscar_cedula.Location = new System.Drawing.Point(906, 24);
+            this.txt_buscar_cedula.Name = "txt_buscar_cedula";
+            this.txt_buscar_cedula.Size = new System.Drawing.Size(140, 20);
+            this.txt_buscar_cedula.TabIndex = 36;
             // 
             // estudiantesFormulario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1225, 450);
+            this.Controls.Add(this.txt_buscar_cedula);
+            this.Controls.Add(this.btn_Buscar);
             this.Controls.Add(this.bt_editar);
             this.Controls.Add(this.bt_eliminar);
             this.Controls.Add(this.groupBox1);
@@ -360,5 +381,7 @@
         private System.Windows.Forms.Button bt_editar;
         private System.Windows.Forms.ComboBox com_especialidad;
         private System.Windows.Forms.ComboBox com_semestre;
+        private System.Windows.Forms.Button btn_Buscar;
+        private System.Windows.Forms.TextBox txt_buscar_cedula;
     }
 }

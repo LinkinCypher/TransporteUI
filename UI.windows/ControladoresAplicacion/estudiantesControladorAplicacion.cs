@@ -91,6 +91,30 @@ namespace UI.windows.ControladoresAplicacion
             }
         }
 
+        public List<estudiantesVistaModelo> BuscarPorCedula(string cedula)
+        {
+            var resultados = EstudiantesServicios.BuscarPorCedula(cedula);
+
+            List<estudiantesVistaModelo> modeloResultados = new List<estudiantesVistaModelo>();
+
+            foreach (var estudiante in resultados)
+            {
+                estudiantesVistaModelo modelo = new estudiantesVistaModelo();
+
+                modelo.Id_estudiante = estudiante.id_estudiante;
+                modelo.Nombre = estudiante.nombre;
+                modelo.Apellido = estudiante.apellido;
+                modelo.Cedula = estudiante.cedula;
+                modelo.Edad = estudiante.edad;
+                modelo.Especialidad = estudiante.especialidad;
+                modelo.Semestre = estudiante.semestre;
+                modelo.Fecha_Registro = estudiante.fecha_Registro;
+                modeloResultados.Add(modelo);
+            }
+
+            return modeloResultados;
+        }
+
         public bool EliminarEstudiante(int id_estudiante)
         {
             try
