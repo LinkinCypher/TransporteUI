@@ -22,11 +22,11 @@ namespace UI.windows.ControladoresAplicacion
             detalles_reserva nuevoET = new detalles_reserva();
             try
             {
-                nuevoET.barrio = nuevoVistaModelo.barrio;
-                nuevoET.calles = nuevoVistaModelo.calles;
-                nuevoET.casa = nuevoVistaModelo.casa;
-                nuevoET.referencia = nuevoVistaModelo.referencia;
-                nuevoET.telefono = nuevoVistaModelo.telefono;
+                nuevoET.barrio = nuevoVistaModelo.Barrio;
+                nuevoET.calles = nuevoVistaModelo.Calles;
+                nuevoET.casa = nuevoVistaModelo.Casa;
+                nuevoET.referencia = nuevoVistaModelo.Referencia;
+                nuevoET.telefono = nuevoVistaModelo.Telefono;
                 Detalles_ReservaServicios.InsertarDetalles_Reserva(nuevoET);
                 return true;
             }
@@ -43,11 +43,11 @@ namespace UI.windows.ControladoresAplicacion
             try
             {
                 actualizarET.id_detalle_reserva = actualizarET.id_detalle_reserva;
-                actualizarET.barrio = actualizarVistaModelo.barrio;
-                actualizarET.calles = actualizarET.calles;
-                actualizarET.casa = actualizarVistaModelo.casa;
-                actualizarET.referencia = actualizarVistaModelo.referencia;
-                actualizarET.telefono = actualizarVistaModelo.telefono;
+                actualizarET.barrio = actualizarVistaModelo.Barrio;
+                actualizarET.calles = actualizarVistaModelo.Calles;
+                actualizarET.casa = actualizarVistaModelo.Casa;
+                actualizarET.referencia = actualizarVistaModelo.Referencia;
+                actualizarET.telefono = actualizarVistaModelo.Telefono;
                 Detalles_ReservaServicios.ActualizarDetalles_Reserva(actualizarET);
                 return true;
             }
@@ -68,12 +68,12 @@ namespace UI.windows.ControladoresAplicacion
                 {
                     resultadoVistaModelo.Add(new detalles_reservaVistaModelo
                     {
-                        id_detalle_reserva = item.id_detalle_reserva,
-                        barrio = item.barrio,
-                        calles = item.calles,
-                        casa = item.casa,
-                        referencia = item.referencia,
-                        telefono = item.telefono,
+                        Id_detalle_reserva = item.id_detalle_reserva,
+                        Barrio = item.barrio,
+                        Calles = item.calles,
+                        Casa = item.casa,
+                        Referencia = item.referencia,
+                        Telefono = item.telefono,
                     });
                 }
                 return resultadoVistaModelo;

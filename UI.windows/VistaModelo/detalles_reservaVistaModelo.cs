@@ -8,11 +8,11 @@ namespace UI.windows.VistaModelo
 {
     public class detalles_reservaVistaModelo
     {
-        public int id_detalle_reserva { get; set; }
-        public string barrio { get; set; }
-        public string calles { get; set; }
-        public string casa { get; set; }
-        public string referencia { get; set; }
-        public string telefono { get; set; }
+        public int Id_detalle_reserva { get; set; }
+        public string Barrio { get; set; }
+        public string Calles { get; set; }
+        public string Casa { get; set; }
+        public string Referencia { get; set; }
+        public string Telefono { get; set; }
     }
 }

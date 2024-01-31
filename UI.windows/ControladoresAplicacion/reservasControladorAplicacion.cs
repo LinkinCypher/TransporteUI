@@ -22,9 +22,9 @@ namespace UI.windows.ControladoresAplicacion
             reservas nuevoET = new reservas();
             try
             {
-                nuevoET.sur = nuevoVistaModelo.sur;
-                nuevoET.centro = nuevoVistaModelo.centro;
-                nuevoET.norte = nuevoVistaModelo.norte;
+                nuevoET.sur = nuevoVistaModelo.Sur;
+                nuevoET.centro = nuevoVistaModelo.Centro;
+                nuevoET.norte = nuevoVistaModelo.Norte;
                 ReservasServicios.InsertarReserva(nuevoET);
                 return true;
             }
@@ -40,10 +40,10 @@ namespace UI.windows.ControladoresAplicacion
             reservas actualizarET = new reservas();
             try
             {
-                actualizarET.id_reserva = actualizarVistaModelo.id_reserva;
-                actualizarET.sur = actualizarVistaModelo.sur;
-                actualizarET.centro = actualizarVistaModelo.centro;
-                actualizarET.norte = actualizarVistaModelo.norte;
+                actualizarET.id_reserva = actualizarVistaModelo.Id_reserva;
+                actualizarET.sur = actualizarVistaModelo.Sur;
+                actualizarET.centro = actualizarVistaModelo.Centro;
+                actualizarET.norte = actualizarVistaModelo.Norte;
                 ReservasServicios.ActualizarReserva(actualizarET);
                 return true;
             }
@@ -64,10 +64,10 @@ namespace UI.windows.ControladoresAplicacion
                 {
                     resultadoVistaModelo.Add(new reservasVistaModelo()
                     {
-                        id_reserva = item.id_reserva,
-                        sur = item.sur,
-                        centro = item.centro,
-                        norte = item.norte,
+                        Id_reserva = item.id_reserva,
+                        Sur = item.sur,
+                        Centro = item.centro,
+                        Norte = item.norte,
                     });
                 }
                 return resultadoVistaModelo;

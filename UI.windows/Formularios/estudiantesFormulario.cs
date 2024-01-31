@@ -26,6 +26,7 @@ namespace UI.windows.Formularios
         private void insertarEstudiantes()
         {
             VistaModelo = new estudiantesVistaModelo();
+<<<<<<< HEAD
             VistaModelo.nombre =   txt_nombre.Text;
             VistaModelo.apellido = txt_apellido.Text;
             VistaModelo.cedula = (int)num_cedula.Value;
@@ -33,6 +34,15 @@ namespace UI.windows.Formularios
             VistaModelo.especialidad = com_especialidad.Text;
             VistaModelo.semestre = com_semestre.Text;
             VistaModelo.fecha_Registro = date_fecha_registro.Value;
+=======
+            VistaModelo.Nombre =   txt_nombre.Text;
+            VistaModelo.Apellido = txt_apellido.Text;
+            VistaModelo.Cedula = (int)num_cedula.Value;
+            VistaModelo.Edad = txt_edad.Text;
+            VistaModelo.Especialidad = lis_especialidad.Text;
+            VistaModelo.Semestre = lis_semestre.Text;
+            VistaModelo.Fecha_Registro = date_fecha_registro.Value;
+>>>>>>> 0b396eb7c67f8274a92cc78f969bcfe5489dc099
             if (ControladorAplicacion.InsertarEstudiante(VistaModelo))
             {
                 MessageBox.Show("Datos ingresados correctamente");

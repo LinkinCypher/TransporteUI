@@ -1,4 +1,4 @@
-<h1>Bienvenido a un ejemplo de un CRUD en .Net Framework</h1>
+<h1>DDD+DIP CRUD en .Net Framework</h1>
 
 <p align="center">
 	<a href="https://visualstudio.microsoft.com/es/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Visual_Studio_Icon_2022.svg/2048px-Visual_Studio_Icon_2022.svg.png" width="200" alt="Visual Studio 2022" /></a>
@@ -26,3 +26,31 @@ SQL Server Express:
 SQL Server Management Studio: 
 <a href="https://aka.ms/ssmsfullsetup?clcid=0x40a" target="_blank">learn.microsoft.com</a>
 <br>
+
+<br>
+
+## CONFIGURACIÓN
+Ubicación del proyecto: <br>
+const string inputFile = @"C:\Proyectos\TransporteUI\Infraestructura.AccesoDatos\Model_TransporteUI.edmx"; <br>
+<br>
+Conexión con la base de datos <br>
+Lo más importante es <b>source=PC-Cr</b> que contiene el nombre del motor de la base de datos.
+Copiar de: 4.Infraestructura > Infraestructura.AccesoDatos > App.Config <br>
+Ejemplo:
+```bash
+<connectionStrings>
+  <add name="transporteUI_DBEntities" connectionString="metadata=res://*/Model_TransporteUI.csdl|res://*/Model_TransporteUI.ssdl|res://*/Model_TransporteUI.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=PC-Cr;initial catalog=transporteUI_DB;integrated security=True;trustservercertificate=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+</connectionStrings>
+```
+Pegar en: 1.InterfazUsuario > UI.windows > VistaModelo > App.Config <br>
+```bash
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8" />
+    </startup>
+  <connectionStrings>
+    <add name="transporteUI_DBEntities" connectionString="metadata=res://*/Model_TransporteUI.csdl|res://*/Model_TransporteUI.ssdl|res://*/Model_TransporteUI.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=PC-Cr;initial catalog=transporteUI_DB;integrated security=True;trustservercertificate=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+  </connectionStrings>
+</configuration>
+```
