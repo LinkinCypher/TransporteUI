@@ -24,3 +24,4 @@ D:\Proyectos\TransporteUI\UI.windows\obj\Debug\UI.windows.csproj.CoreCompileInpu
 D:\Proyectos\TransporteUI\UI.windows\obj\Debug\UI.windows.csproj.CopyComplete
 D:\Proyectos\TransporteUI\UI.windows\obj\Debug\UI.windows.exe
 D:\Proyectos\TransporteUI\UI.windows\obj\Debug\UI.windows.pdb
+D:\Proyectos\TransporteUI\UI.windows\obj\Debug\UI.windows.Formularios.transporteFormularioMDI.resources

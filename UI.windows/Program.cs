@@ -17,9 +17,7 @@ namespace UI.windows
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new estudiantesFormulario());
-            Application.Run(new reservasFormulario());
-            Application.Run(new detalles_reservaFormulario());
+            Application.Run(new transporteFormularioMDI());
         }
     }
 }

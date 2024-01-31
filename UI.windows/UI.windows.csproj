@@ -83,6 +83,12 @@
     <Compile Include="Formularios\reservasFormulario.Designer.cs">
       <DependentUpon>reservasFormulario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\transporteFormularioMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\transporteFormularioMDI.Designer.cs">
+      <DependentUpon>transporteFormularioMDI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VistaModelo\detalles_reservaVistaModelo.cs" />
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\reservasFormulario.resx">
       <DependentUpon>reservasFormulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\transporteFormularioMDI.resx">
+      <DependentUpon>transporteFormularioMDI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
