@@ -45,8 +45,10 @@
             this.num_cedula = new System.Windows.Forms.NumericUpDown();
             this.date_fecha_registro = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lis_semestre = new System.Windows.Forms.ListBox();
-            this.lis_especialidad = new System.Windows.Forms.ListBox();
+            this.bt_eliminar = new System.Windows.Forms.Button();
+            this.bt_editar = new System.Windows.Forms.Button();
+            this.com_especialidad = new System.Windows.Forms.ComboBox();
+            this.com_semestre = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dg_estudiantes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_cedula)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -101,7 +103,7 @@
             this.txt_edad.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txt_edad.Location = new System.Drawing.Point(120, 117);
             this.txt_edad.Name = "txt_edad";
-            this.txt_edad.Size = new System.Drawing.Size(169, 20);
+            this.txt_edad.Size = new System.Drawing.Size(164, 20);
             this.txt_edad.TabIndex = 21;
             // 
             // lb_edad
@@ -132,7 +134,7 @@
             this.txt_apellido.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txt_apellido.Location = new System.Drawing.Point(120, 52);
             this.txt_apellido.Name = "txt_apellido";
-            this.txt_apellido.Size = new System.Drawing.Size(169, 20);
+            this.txt_apellido.Size = new System.Drawing.Size(164, 20);
             this.txt_apellido.TabIndex = 17;
             // 
             // lb_apellido
@@ -152,7 +154,7 @@
             this.txt_nombre.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txt_nombre.Location = new System.Drawing.Point(120, 21);
             this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(169, 20);
+            this.txt_nombre.Size = new System.Drawing.Size(164, 20);
             this.txt_nombre.TabIndex = 15;
             // 
             // lb_nombre
@@ -226,8 +228,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.lis_especialidad);
-            this.groupBox1.Controls.Add(this.lis_semestre);
+            this.groupBox1.Controls.Add(this.com_semestre);
+            this.groupBox1.Controls.Add(this.com_especialidad);
             this.groupBox1.Controls.Add(this.date_fecha_registro);
             this.groupBox1.Controls.Add(this.num_cedula);
             this.groupBox1.Controls.Add(this.lb_fecha_Registro);
@@ -249,29 +251,36 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DATOS DEL ESTUDIANTE";
             // 
-            // lis_semestre
+            // bt_eliminar
             // 
-            this.lis_semestre.FormattingEnabled = true;
-            this.lis_semestre.Items.AddRange(new object[] {
-            "Primero",
-            "Segundo",
-            "Tercero",
-            "Cuarto",
-            "Quinto",
-            "Sexto",
-            "Séptimo",
-            "Octavo",
-            "Noveno",
-            "Décimo"});
-            this.lis_semestre.Location = new System.Drawing.Point(118, 189);
-            this.lis_semestre.Name = "lis_semestre";
-            this.lis_semestre.Size = new System.Drawing.Size(171, 17);
-            this.lis_semestre.TabIndex = 33;
+            this.bt_eliminar.BackColor = System.Drawing.Color.DarkRed;
+            this.bt_eliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_eliminar.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.bt_eliminar.Location = new System.Drawing.Point(84, 405);
+            this.bt_eliminar.Name = "bt_eliminar";
+            this.bt_eliminar.Size = new System.Drawing.Size(182, 33);
+            this.bt_eliminar.TabIndex = 33;
+            this.bt_eliminar.Text = "ELIMINAR";
+            this.bt_eliminar.UseVisualStyleBackColor = false;
+            this.bt_eliminar.Click += new System.EventHandler(this.bt_eliminar_Click);
             // 
-            // lis_especialidad
+            // bt_editar
             // 
-            this.lis_especialidad.FormattingEnabled = true;
-            this.lis_especialidad.Items.AddRange(new object[] {
+            this.bt_editar.BackColor = System.Drawing.Color.Green;
+            this.bt_editar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_editar.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.bt_editar.Location = new System.Drawing.Point(84, 362);
+            this.bt_editar.Name = "bt_editar";
+            this.bt_editar.Size = new System.Drawing.Size(182, 33);
+            this.bt_editar.TabIndex = 34;
+            this.bt_editar.Text = "EDITAR";
+            this.bt_editar.UseVisualStyleBackColor = false;
+            this.bt_editar.Click += new System.EventHandler(this.bt_editar_Click);
+            // 
+            // com_especialidad
+            // 
+            this.com_especialidad.FormattingEnabled = true;
+            this.com_especialidad.Items.AddRange(new object[] {
             "Medicina",
             "Telecomunicaciones",
             "Informática",
@@ -282,16 +291,37 @@
             "Administración",
             "Contabilidad",
             "Psicología"});
-            this.lis_especialidad.Location = new System.Drawing.Point(118, 155);
-            this.lis_especialidad.Name = "lis_especialidad";
-            this.lis_especialidad.Size = new System.Drawing.Size(171, 17);
-            this.lis_especialidad.TabIndex = 34;
+            this.com_especialidad.Location = new System.Drawing.Point(120, 151);
+            this.com_especialidad.Name = "com_especialidad";
+            this.com_especialidad.Size = new System.Drawing.Size(164, 21);
+            this.com_especialidad.TabIndex = 35;
+            // 
+            // com_semestre
+            // 
+            this.com_semestre.FormattingEnabled = true;
+            this.com_semestre.Items.AddRange(new object[] {
+            "Primero",
+            "Segundo",
+            "Tercero",
+            "Cuarto",
+            "Quinto",
+            "Sexto",
+            "Séptimo",
+            "Octavo",
+            "Noveno",
+            "Décimo"});
+            this.com_semestre.Location = new System.Drawing.Point(120, 185);
+            this.com_semestre.Name = "com_semestre";
+            this.com_semestre.Size = new System.Drawing.Size(164, 21);
+            this.com_semestre.TabIndex = 35;
             // 
             // estudiantesFormulario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1225, 450);
+            this.Controls.Add(this.bt_editar);
+            this.Controls.Add(this.bt_eliminar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dg_estudiantes);
             this.Controls.Add(this.bt_guardar);
@@ -326,7 +356,9 @@
         private System.Windows.Forms.NumericUpDown num_cedula;
         private System.Windows.Forms.DateTimePicker date_fecha_registro;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListBox lis_semestre;
-        private System.Windows.Forms.ListBox lis_especialidad;
+        private System.Windows.Forms.Button bt_eliminar;
+        private System.Windows.Forms.Button bt_editar;
+        private System.Windows.Forms.ComboBox com_especialidad;
+        private System.Windows.Forms.ComboBox com_semestre;
     }
 }

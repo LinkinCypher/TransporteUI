@@ -89,5 +89,19 @@ namespace UI.windows.ControladoresAplicacion
                 return null;
             }
         }
+
+        public bool EliminarEstudiante(int id_estudiante)
+        {
+            try
+            {
+                EstudiantesServicios.EliminarEstudiante(id_estudiante);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return false;
+            }
+        }
     }
 }
